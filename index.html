@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container d-flex flex-column align-items-center">
+    <h1 class="text-center">Calculate</h1>
+    <div class="calculator">
+      <input type="text" class="form-control" id="result" readonly>
+      <table class="table">
+        <tr>
+          <td><button class="btn btn-primary" onclick="appendNumber(7)">7</button></td>
+          <td><button class="btn btn-primary" onclick="appendNumber(8)">8</button></td>
+          <td><button class="btn btn-primary" onclick="appendNumber(9)">9</button></td>
+          <td><button class="btn btn-primary" onclick="performOperation('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btn-primary" onclick="appendNumber(4)">4</button></td>
+          <td><button class="btn btn-primary" onclick="appendNumber(5)">5</button></td>
+          <td><button class="btn btn-primary" onclick="appendNumber(6)">6</button></td>
+          <td><button class="btn btn-primary" onclick="performOperation('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btn-primary" onclick="appendNumber(1)">1</button></td>
+          <td><button class="btn btn-primary" onclick="appendNumber(2)">2</button></td>
+          <td><button class="btn btn-primary" onclick="appendNumber(3)">3</button></td>
+          <td><button class="btn btn-primary" onclick="performOperation('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button class="btn btn-primary" onclick="appendNumber(0)">0</button></td>
+          <td><button class="btn btn-primary" onclick="appendDecimal()">.</button></td>
+          <td><button class="btn btn-primary" onclick="calculate()">=</button></td>
+          <td><button class="btn btn-primary" onclick="performOperation('/')">/</button></td>
+        </tr>
+        <tr>
+          <td colspan="4"><button class="btn btn-secondary" onclick="clearCalculator()">C</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

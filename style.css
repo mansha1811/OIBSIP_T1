@@ -1,0 +1,27 @@
+  .calculator {
+    max-width: 200px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .calculator table {
+    width: 100%;
+  }
+  
+  .calculator input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .calculator button {
+    width: 100%;
+    padding: 10px;
+  }
+  
